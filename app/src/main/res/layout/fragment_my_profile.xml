@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MyProfileFrag">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivMyProfile"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:id="@+id/edtProfileName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/dp_20"
+                android:textColor="@color/blacklight"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyProfileID" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvMyProfileID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="@+id/ivMyProfile"
+                app:layout_constraintStart_toStartOf="@+id/ivMyProfile"
+                app:layout_constraintTop_toBottomOf="@+id/ivMyProfile" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="User Name"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/dp_20"
+                android:textColor="@color/blacklight"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtProfileName" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_vehicle_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName">
+
+                <Spinner
+                    android:id="@+id/spinnergender"
+                    android:layout_width="400dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/edtProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_marginStart="@dimen/sp_16"
+                    android:layout_marginEnd="@dimen/sp_16"
+                    android:background="@drawable/bg_edit_text"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:textColor="@color/blacklight"
+                    android:textColorHint="@color/blacklight"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="405dp" />
+            </RelativeLayout>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/edtProfileDate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Date of Birth"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/dp_20"
+                android:textColor="@color/blacklight"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_vehicle_type" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvEmailID"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Email Address"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/dp_20"
+                android:textColor="@color/blacklight"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtProfileDate" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailID">
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/blacklight"
+                    android:textColorHint="@color/blacklight"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvProfileEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/edit"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="@dimen/text_size_medium"
+                android:text="@string/your_country"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <!--<com.hbb20.CountryCodePicker-->
+            <!--android:id="@+id/ccp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawablePadding="1dp"-->
+            <!--android:gravity="left"-->
+            <!--android:padding="8dp"-->
+            <!--android:textSize="16sp"-->
+            <!--app:contentColor="@color/white"-->
+            <!--app:defaultCode="1"-->
+            <!--app:hideNameCode="true"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/ccp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/ccp"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/ccp"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/ccp"-->
+            <!--app:showFlag="false"-->
+            <!--app:textSize="16sp" />-->
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                app:ccp_clickable="false"
+                app:ccp_showFlag="false"
+                app:ccp_showFullName="true"
+                app:ccp_showPhoneCode="true"
+                android:background="@drawable/bg_edit_text"
+                android:drawableRight="@drawable/down_s"
+                android:ems="10"
+                app:ccp_textSize="@dimen/sp_15"
+                app:ccp_contentColor="@color/blacklight"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/blacklight"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:ccp_defaultNameCode="SA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="@string/app_language"
+                android:textColor="@color/colorBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_appLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Spinner
+                    android:id="@+id/spinnerAppLang"
+                    android:layout_width="400dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvAppLanguageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="@dimen/sp_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/sp_16"
+                    android:background="@drawable/bg_edit_text"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/blacklight"
+                    android:textColorHint="@color/blacklight"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    tools:ignore="NotSibling" />
+            </RelativeLayout>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="@string/speak_language"
+                android:textColor="@color/colorBlue"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_appLang" />
+
+            <RelativeLayout
+                android:id="@+id/rl_SpeakLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <Spinner
+                    android:id="@+id/spinnerSpeakLang"
+                    android:layout_width="400dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvSpeakLanguageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/blacklight"
+                    android:textColorHint="@color/blacklight"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="1011dp" />
+            </RelativeLayout>
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_white_purpal"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_SpeakLang"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/myRateBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_sign_in"
+                android:gravity="center"
+                android:text="@string/my_rate"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditProfile" />
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/contactAdminBtnProfile"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_sign_in"
+                android:gravity="center"
+                android:text="@string/nav_contact_admin"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myRateBtn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

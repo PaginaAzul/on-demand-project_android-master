@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.pagin.azul"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 7
+        versionName "1.06"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //... removed for brevity
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        //4g : 4GB max dex size, 2048m
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0-alpha2'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.1.0"
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //   firebase
+//    implementation 'com.google.firebase:firebase-core:14.0.0'
+
+
+    implementation "androidx.browser:browser:1.3.0"
+    implementation 'com.google.firebase:firebase-bom:26.2.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.1'
+
+
+
+
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //otp view
+    implementation "com.github.GoodieBag:Pinview:v1.3"
+
+    //view pager for left right indicator
+    implementation 'com.github.kassisdion:ViewPagerWithIndicator:v1.0'
+    implementation 'com.github.sembozdemir:ViewPagerArrowIndicator:1.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.0'
+    //implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.airbnb.android:lottie:2.6.0'
+
+    //implementation 'com.hbb20:ccp:1.7.2'
+    //country code picker
+    implementation 'com.hbb20:ccp:2.0.0'
+
+    implementation 'com.isseiaoki:simplecropview:1.1.7'
+    implementation 'joda-time:joda-time:2.9.7'
+    implementation 'com.devbrackets.android:exomedia:4.1.0'
+    implementation 'jp.wasabeef:fresco-processors:2.1.0'
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    implementation 'io.michaelrocks:libphonenumber-android:8.8.5'
+    implementation 'jp.wasabeef:fresco-processors:2.1.0'
+    implementation 'com.github.barteksc:pdfium-android:1.4.0'
+
+    implementation 'com.github.drawers:SpinnerDatePicker:1.0.6'
+
+    implementation('io.socket:socket.io-client:0.8.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    // Add the Firebase Crashlytics dependency.
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    //implementation "com.github.YarikSOffice:lingver:1.3.0"
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+
+    // Facebook shimmer effect dependency
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    implementation 'com.github.badoualy:stepper-indicator:1.0.7'
+
+    // Facebook shimmer effect dependency
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    implementation 'com.github.drawers:SpinnerDatePicker:1.0.6'
+
+
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'
+// Add the Fabric plugin.
+apply plugin: 'io.fabric'

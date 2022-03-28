@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RateNormalUserFrag">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tab"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center">
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_toRat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/total_rating"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/text_size_large" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_rate"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toRightOf="@+id/tv_toRat"
+            android:background="@color/yellow">
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/avg_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_5"
+                android:text="4.5"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dp_13" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_3"
+                android:layout_toRightOf="@+id/avg_rate"
+                android:src="@drawable/star" />
+        </RelativeLayout>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/total_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_toRightOf="@+id/rl_rate"
+            android:text="@string/rating_25"
+            android:textColor="@color/blue_tint"
+            android:textSize="@dimen/dp_13" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/rl_relative"
+        android:id="@+id/rv_normal_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+
+
+</RelativeLayout>

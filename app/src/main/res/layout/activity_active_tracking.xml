@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActiveTrackingActivity">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/actionBarBackgroundColor">-->
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="0.1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_m"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:paddingStart="@dimen/dp_10"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back"
+                />
+            <com.pagin.azul.view.RobotoSemiBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/track_distance"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/dp_15">
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Order ID: 2358996"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_regular" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/invoice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toStartOf="@+id/invoice_date"
+                android:text="10:00AM,"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/invoice_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="12/01/2019"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--</android.support.v7.widget.Toolbar>-->
+    <fragment
+        android:id="@+id/mapview"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar"
+        android:apiKey="AIzaSyDPf4CCfDhwAE95PYIQqapM_ixUUt4er20" />
+
+    <include layout="@layout/active_track_layout"></include>
+
+    <WebView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webUrl">
+
+    </WebView>
+
+</RelativeLayout>

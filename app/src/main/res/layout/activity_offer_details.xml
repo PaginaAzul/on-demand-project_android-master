@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.HomeOfferDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rey_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/actionBarBackgroundColor"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include layout="@layout/toolbar_map_layout" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:id="@+id/l_layout"
+        android:layout_below="@+id/rey_layout"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tv_new"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="New"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_pending"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="Pending"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_active"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="Active"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_post"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="Past"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/l_layout"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_filter"
+            android:background="@drawable/canvas_filter_bg"
+            android:text="Set Filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:padding="@dimen/dp_15"
+            android:visibility="gone"
+            android:drawableEnd="@drawable/filter"
+
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/tv_filter"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

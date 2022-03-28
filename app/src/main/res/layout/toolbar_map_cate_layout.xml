@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionBarBackgroundColor"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_backDelivery"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_10"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/dp_0"
+                android:visibility="visible"
+                android:src="@drawable/menu" />
+
+            <com.pagin.azul.utils.InstantAutoComplete
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_35"
+                android:layout_marginEnd="@dimen/dp_60"
+                android:layout_marginStart="@dimen/dp_60"
+                android:textColor="@color/black"
+
+                android:hint="Search for store"
+                android:textColorHint="@color/textgrey"
+                android:gravity="center"
+                android:background="@drawable/edit_white_back"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/iv_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/notification" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/dividerColor" />
+
+</RelativeLayout>

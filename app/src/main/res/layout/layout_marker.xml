@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marker"/>
+
+
+        <TextView
+            android:id="@+id/tvMarker"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/dp_16"
+            android:background="@drawable/bg_white_btn"
+            android:layout_marginTop="@dimen/dp_3"
+            android:padding="@dimen/dp_8"
+            android:text="25k"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaginAzul</string>
+
+    <string name="google_map_api_keyJ">AIzaSyBm6eN8n8A3tzhp-RYKwDZhHw3IfJ36BNA</string><!--//Jokar-->
+    <string name="google_map_api_key">AIzaSyDbeg8Dh2fnyHpmMcuL2PtUPN9kqvQFDdY</string><!--//Jokar-->
+    <!--<string name="google_map_api_key">AIzaSyD7gzrvGoxG1ZwdXWTp4oUq2sEfmltNxEg</string>--><!--//Paginazul-->
+
+
+    <string name="whichservice">Which Service you want?</string>
+    <string name="provide_service">Provide Service</string>
+    <string name="require_service">Require Service</string>
+    <string name="select_service">Select your service</string>
+    <string name="delivery_person">Entregador</string>
+    <string name="professional_worker">Provedor de Serviços</string>
+    <string name="prof_worker">Provedor de\nServiços</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancel_offer">Cancel Offer</string>
+
+    <string name="signInNow">Entrar</string>
+    <string name="signup_now">Registrar</string>
+    <string name="submit">Enviar</string>
+    <string name="enter_mobile_number">Digite o número do tele móvel</string>
+    <string name="full_name">Nome completo</string>
+    <string name="user_name">Nome do usuário</string>
+    <string name="select_your_birth_year">Selecione seu ano de nascimento</string>
+    <string name="email_address">Endereço de e-mail</string>
+    <string name="select_your_Country">Escolha o seu país</string>
+    <string name="select_app_language">Selecione o idioma do aplicativo</string>
+    <string name="select_speak_language">Selecione o idioma de comunicação</string>
+    <string name="sign_up">Registrar</string>
+    <string name="hello_nihar_welcome_to_jokar_family">Olá seja Bem-vindo à\nfamília Paginazul!</string>
+    <string name="welcome_to_">Bem-vindo à\n<font color="#0892D0">família</font> Paginazul!</string>
+    <string name="please_enter_one_time_security_code_sent_on_your_register_phone_number">Digite um código de segurança enviado\nno seu número de telefone</string>
+    <string name="i_didn_t_receive_a_code">Eu não recebi o código!</string>
+    <string name="resend">Reenviar</string>
+    <string name="customer_service_admin">Atendimento ao cliente</string>
+    <string name="captain_assistant_admin">Atendimento ao provedor</string>
+    <string name="bank_account_admin">Bank Account Admin</string>
+
+    <string name="your_country">Seu país</string>
+    <string name="my_caption_profile">My Captain Profile</string>
+    <string name="my_rate">Minha avaliação</string>
+
+    <string name="mobile_number_update_successfully">Número de telefone atualizado com\nsucesso!</string>
+
+    <string name="skip">Skip</string>
+
+    <string name="i_accept">eu aceito</string>
+    <string name="i_agree">eu concordo</string>
+
+    <string name="terms_con">" "<u>Terms &amp; Conditions</u></string>
+    <string name="terms_con1">" "Terms &amp; Conditions</string>
+    <string name="terms_condition_and">" "<b><u>Termos e Condições</u></b> e </string>
+    <string name="privacy_policy">" "<b><u>Privacidade Política</u></b></string>
+    <string name="pricy_policy">Política de Privacidade</string>
+    <string name="terms_conditions_and_privacy_policy">Termos e Condições e Política de Privacidade</string>
+    <string name="more">Mais</string>
+
+    <string name="manage_delivery_worker">Manage Delivery \nWorker</string>
+    <string name="manage_professional_worker">Gerenciar Provedor de \nServiço</string>
+
+
+    <!--//-->
+    <string name="nav_home">Início</string>
+    <string name="nav_my_order">Lista de pedido</string>
+    <string name="nav_wallet">My wallet/Passbook</string>
+    <string name="nav_address">Histórico de Endereços</string>
+    <string name="nav_profile">Meu perfil</string>
+    <string name="nav_delivry_person">Become Delivery Person</string>
+    <string name="nav_profsnal_wrkr">Seja Prestador de Serviço</string>
+    <string name="nav_setting">Configurações</string>
+    <string name="nav_arabic">Idioma</string>
+    <string name="nav_rate_us">Avalie-nos</string>
+    <string name="nav_share_earn">Compartilhe</string>
+    <string name="nav_contact_admin">Entre em contato com o administrador</string>
+    <string name="nav_follow_us">Siga-nos</string>
+
+
+    <string name="order_track">Lista de pedidos activos</string>
+    <string name="add_card">Add Card</string>
+    <string name="card_name">Card Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="save">Guardar</string>
+    <string name="time">Tempo</string>
+
+    <string name="view_all_offers">Ver todas propostas</string>
+    <string name="all_offer">Todas Propostas</string>
+    <string name="add_money">Add Money</string>
+    <string name="pay_your_credit">Pay Your Credit</string>
+    <string name="bank_bank_to_bank_transfer">Bank to Bank Transfer(Our Bank A/C)</string>
+    <string name="available_balance">Available Balance :</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="add_new_bank">Add New Bank</string>
+    <string name="my_bank_details">My Bank Details</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="holder_account_number">Holder Account Number</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="manage_addresses">Manage Addresses</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="add_bank">Add Bank</string>
+    <string name="my_wallet_history">My Wallet History</string>
+
+    <string name="bank_to_bank_transfer">Bank T0 Bank Transfer(Our Bank A/C)</string>
+    <string name="saudi">Saudi</string>
+    <string name="our_name">Nosso nome</string>
+    <string name="our_account_number">Our Account Number</string>
+    <string name="my_wallet_passbook">My Wallet/Passbook</string>
+    <string name="view_orders_details">Exibir detalhes dos pedidos</string>
+    <string name="manage_my_cards_and_my_bank">Manage My Cards</string>
+    <string name="pay_your_credit_our_bank_account">Pay Your Credit</string>
+
+    <string name="normal_user">Normal User</string>
+    <string name="delivery_worker">Delivery Worker</string>
+    <string name="pro_worker">Pró. Trabalhador</string>
+
+    <string name="filter_transaction">Filter Transaction</string>
+    <string name="all_added">All Added</string>
+    <string name="all_paid">All Paid</string>
+
+    <string name="month_filter">Month Filter</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_month">Select Month</string>
+    <string name="money_added_successfully">Money Added Successfully</string>
+    <string name="ok">OK</string>
+
+    <string name="manager_card">Manage Card</string>
+    <string name="add_new_card">Add New Card</string>
+
+    <string name="total_amount_to_be_added">Total Amount to be added</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="other_saved_cards">Other Saved Cards</string>
+
+    // Profile my rate
+    <string name="professional">Profissional</string>
+    <string name="delivery_man">Delivery Man</string>
+    <string name="total_rating">Classificação total</string>
+    <string name="rating_25">(25 Avaliações)</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_type_setting_industry">Lorem Ipsum is simply dummy text of the printing and type setting industry</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="upload_ID_txt">Você deve carregar uma fotografia sua e dois documentos de identificação. (B.I, passaporte ou carta de condução)</string>
+    <string name="upload_verified_icon"><u>Carregue a sua foto</u></string>
+
+
+    <string name="order_id">Nº do pedido:\u00A0</string>
+    <string name="profilr_name">User Name</string>
+    <string name="rating_view_all">(0 Classificações Ver todas)</string>
+    <string name="optional">Opcional</string>
+    <string name="my_location">Minha\nlocalização</string>
+    <string name="your_location">Sua\nlocalização</string>
+    <string name="order_detail">detalhes do pedido</string>
+    <string name="minimum_offer">Valor da proposta em Kz</string>
+    <string name="make_an_offer">Fazer uma proposta</string>
+    <string name="enter_message_if_any">Adicionar mensagem</string>
+    <string name="add_approx_time_for_complete_work">Adicionar tempo de execução do serviço</string>
+    <string name="tap_plumber_any_kind_of_them">Torneira Encanador, qualquer tipo de torneira</string>
+    <string name="professional_tap_plumber">Professional Tap Plumber</string>
+    <string name="lorem_ipsum_is_simply">Lorem Ipsum is simply dummy text of the printing and type setting industry.Lorem Ipsum has been the the industry standerd dummy text ever since the 1500s</string>
+
+
+    <string name="my_profile">Meu perfil</string>
+    <string name="caption_profile">My Captain Profile</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="manage_address">Editar endereços</string>
+    <string name="contact_admin">Entre em contato com o administrador</string>
+    <string name="my_order_dashboard">My Order\'s Dashboard</string>
+    <string name="english">Inglês</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="become_delivery_person">Become A Delivery Person</string>
+    <string name="become_prfslnal_wrkr">Become Professional Worker</string>
+
+    <string name="dashboard_normal_user">I\'m Normal User</string>
+    <string name="dashboard_delivery_worker">I\'m Delivery Worker</string>
+    <string name="dashboard_professional_worker">I\'m Professional Worker</string>
+
+    <string name="item_name1">Nome do item 1-15.00</string>
+    <string name="item_name2">Nome do item 2-15.00</string>
+    <string name="offer_amount">Valor do serviço</string>
+    <string name="msg">Enviar mensagem</string>
+    <string name="prff_msg">Mensagem do provedor de serviço</string>
+    <string name="work_completion_time">Delivery Time</string>
+    <string name="work_completion_time1">Tempo de conclusão do trabalho</string>
+    <string name="invoice_details">Detalhes da factura</string>
+    <string name="delivery_offer">Preço do Serviço</string>
+    <string name="delivery_offer1">Taxa de entrega</string>
+    <string name="tax">Taxa de Serviço 5%</string>
+    <string name="total">Total</string>
+    <string name="work_done">Trabalho feito</string>
+    <string name="done">Feito</string>
+    <string name="make_new_offer">Nova\nproposta</string>
+    <string name="report_cancel_order">Cancelar Pedido</string>
+    <string name="cancellation">Cancelamento</string>
+    <string name="report_orderh">Relatório do pedido!</string>
+    <string name="address_detail">Detalhes do Endereço</string>
+    <string name="service_location">Localização do Serviço</string>
+    <string name="service_loc">Localização\ndo Serviço</string>
+    <string name="credit_use_ur_wallet">Uso de crédito da sua carteira para este pedido</string>
+
+    <string name="tax_you_received_from_user_by_cash_5">Imposto que você recebeu do usuário bycash 5%</string>
+    <string name="account_balance">Saldo da conta</string>
+    <string name="total_bills_paid">Total de contas pagas</string>
+    <string name="order_count">Contagem de pedidos</string>
+
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="sace_loc_as">Registar local como</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    \n\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word.</string>
+
+    <string name="offer_submit_success">Proposta enviada com sucesso</string>
+    <string name="tap_plumber">Tap Plumber, any kind of tap</string>
+    <string name="professional_plumber">Canalizador profissional</string>
+    <string name="prof_ofr">Proposta</string>
+    <string name="address_details">Address Details</string>
+    <string name="invoice_amt">Custo do Material</string>
+
+    <string name="all_offered">Ver todas propostas</string>
+    <string name="edit_order">Editar pedido</string>
+    <string name="cancel_order">Cancelar Pedido</string>
+    <string name="call">Ligar</string>
+    <string name="message">Enviar mensagem</string>
+    <string name="track">Seguir</string>
+    <string name="offer_pending">Propostas pendente</string>
+    <string name="go_to_wallet"><u>Go to Wallet</u></string>
+    <string name="report_order">Report Order!</string>
+
+
+    <string name="normal_user_notification">Notificação normal do usuário</string>
+    <string name="about_us">Sobre nós</string>
+    <string name="contact_us">Fale Connosco</string>
+    <string name="term_and_condition">Termos e Condições</string>
+    <string name="logout">Sair</string>
+    <string name="update_language">Atualizar idioma</string>
+
+    <!--......-->
+    <string name="completed">Concluído</string>
+    <string name="delivery_message">Delivery Message</string>
+    <string name="delivery_time">Tempo de entrega</string>
+    <string name="accept_offer">Aceitar proposta</string>
+    <string name="select_reason">Selecionar motivo</string>
+    <string name="issues_order">Problemas com o meu pedido!</string>
+    <string name="pickup_location">Ponto de\npartida</string>
+    <string name="dropofflocation">Destino</string>
+    <string name="servicelocation">Localização do\nServiço</string>
+    <string name="dropoff">Ponto final</string>
+    <string name="charge_offer">Facturar</string>
+
+
+    <string name="give_your_rating_riview">Dê sua avaliação e revisão</string>
+    <string name="very_bad">Muito mal</string>
+    <string name="bad">Ruim</string>
+    <string name="good">Boa</string>
+    <string name="very_good">Muito bom</string>
+    <string name="excellent">Excelente</string>
+
+    <string name="what_do_you_like_most">O que mais gostou</string>
+
+    <string name="quick_service">Rapidez</string>
+    <string name="gental">Gentileza</string>
+    <string name="responsive">Nível de resposta</string>
+    <string name="rating_and_review">Avaliação e revisão</string>
+    <string name="give_your_comment">Dê sua opinião</string>
+    <string name="note_make_sure_once_you_submit_the_comment_">Nota: Após enviar o comentário, não terás como alterar</string>
+    <string name="change_offer">Alterar Proposta</string>
+
+    <string name="dummy_message">Mensagem fictícia</string>
+    <string name="credit_use_from_your_wallet">Credit use from your wallet for this order</string>
+    <string name="we_are_using_only">Estamos usando apenas dinheiro para o pagamento</string>
+    <string name="review_invoice"><u>Revisar\nFactura</u></string>
+    <string name="create_invoice"><u>Emitir\nFactura</u></string>
+    <string name="invoice_created">Fatura\ncriada</string>
+    <string name="delivery_worker_view">Trabalhador</string>
+    <string name="edit_invoice"><u>Editar\nfatura</u></string>
+    <string name="drop_off_arrived">Entrega\n(Chegou)</string>
+    <string name="arrived">Chegou</string>
+    <string name="reach">Alcance</string>
+    <string name="invoice_created_msg">Invoice\nCreated</string>
+
+    <string name="we_apologized_if_we_miss_your_professional_category_at_menu_please_contact_us_to_add_your_professional_category_as_you_wish">Pedimos desculpas se a sua categoria profissional não consta na lista. Entre em contato conosco para adicionar sua categoria profissional como desejar</string>
+    <string name="select_name">Selecione o nome</string>
+    <string name="enter_name">Insira o nome</string>
+
+    <string name="goods_cost">Custo do material</string>
+    <string name="enter_total_cost_of_goods">Insere o custo total do material</string>
+    <string name="invoice_image">Imagem da factura</string>
+    <string name="delivery_cost_vat">Custo de Entrega + IVA</string>
+
+    <string name="areyou_sure">Tem certeza que deseja sair?</string>
+    <string name="no_data_found">Nenhum dado encontrado</string>
+    <string name="only">Somente</string>
+    <string name="sar">\u00A0SAR</string>
+    <string name="prof_working"> Serviço em\nexecução</string>
+    <string name="prof_workr"> Trabalho\nProfissional</string>
+    <string name="rating_all"> Avaliações</string>
+
+    <!--//<ToastText>-->
+    <string name="no_offer_found">Nenhuma proposta para esta solicitação no momento.</string>
+
+    <!--...Chat..-->
+    <string name="messages">Mensagens</string>
+    <string name="read_attachement">Leia o anexo</string>
+    <string name="minimum_Offer">Oferta mínima 1000kz *</string>
+    <!--&gt;>>>>new String>>-->
+
+    <string name="report_order_hint">Escrever relatório de pedido…</string>
+    <string name="create_invoice_tracking">Create\nInvoice</string>
+    <string name="order_offer">Seu pedido foi enviado. Receberá uma proposta em breve</string>
+    <string name="no_delivery_captain">No Delivery Captain is available \nat this time. Please try again later.</string>
+    <string name="taken_other_dp">Sorry, This order has been taken by other \ndelivery person.</string>
+    <string name="taken_other_pw">Não te desanime, este pedido foi realizado por outro profissional</string>
+    <string name="offer">Proposta</string>
+
+    <string name="delivery_worker_new_line">Delivery \nWorker</string>
+    <string name="try_again">Tente novamente</string>
+    <string name="title_activity_delivery_make_offer">DeliveryMakeOfferActivity</string>
+    <string name="offer_than_ur">No entanto, existe uma proposta mais baixa que a sua.\nVocê pode enviar uma nova proposta, se desejar.</string>
+    <string name="msg_track_order">Contacte o Cliente</string>
+    <string name="withraw_draw">Deseja mesmo retirar\nesta encomenda?</string>
+    <string name="change_del_pers">Você quer realmente mudar de\nprofissional?</string>
+    <string name="manage_track_offer">Entrar em contacto</string>
+    <string name="great_dialog_txt_normal">Seu pedido foi iniciado! Desejamos a você a melhor experiência. Se desejar poderá contactar a PaginAzul</string>
+    <string name="your_service_delivered_thanks_for_using_jokar_app">Seu serviço foi concluído.\nObrigado por usar o <font color="#0892D0">Paginazul</font></string>
+
+    <string name="delivery_admin_aproval">Your request for become Delivery Person is under approval.</string>
+    <string name="view_new_orders">Ver novos pedidos</string>
+    <string name="welcome_n_to_joker">Bem-vindo a Paginazul</string>
+    <string name="home">Início</string>
+    <string name="home_services">Serviços residenciais</string>
+    <string name="login_sign_up">Entrar | Registar</string>
+    <string name="category">Categoria</string>
+    <string name="sub_category">Subcategoria</string>
+    <string name="track_distance">Distância do percurso</string>
+    <string name="order_location">Local do pedido</string>
+    <string name="mode_of_transport">Transporte</string>
+    <string name="edit">Editar</string>
+    <string name="previous_work">Trabalhos realizados</string>
+    <string name="provider_details">Detalhe do Profissional</string>
+    <string name="view_profile"><u>Ver perfil</u></string>
+    <string name="instruction_chat">A Paginazul guarda informações prestada pelos usuários</string>
+
+    <string name="title">Título</string>
+    <string name="landmark">Ponto de referência</string>
+    <string name="your_address">Seu endereço…</string>
+    <string name="upload_id_1">Carregar 1ª Identificação</string>
+    <string name="upload_id_2">Carregar 2ª Identificação</string>
+    <string name="write_something_about">Escreva algo sobre</string>
+    <string name="write_reason_for_cancellation">Escreva o motivo do cancelamento…</string>
+    <string name="portuguese">Português</string>
+    <string name="cond_vila_flor_rua_04_n_202_rua_principal_do_camama_launda_angola">Cond. Vila Flor, Rua 04, nº 202 Rua principal do Camama Luanda-Angola</string>
+    <string name="paginazul_paginazul_com">paginazul@paginazul.co.ao</string>
+    <string name="_966_00_000_0000">+244 923 283 618</string>
+    <string name="send">Enviar</string>
+    <string name="start">Começar</string>
+    <string name="pickup">PickUp</string>
+    <string name="delivered">Entregue</string>
+    <string name="type_here">Digite aqui…</string>
+    <string name="write_here_your_issue">Escreva aqui seu problema…</string>
+    <string name="add_new_address">Adicionar novo endereço</string>
+    <string name="enter_your_service_location">Digite o local do serviço</string>
+    <string name="within_1_hours">Dentro de 1 horas</string>
+    <string name="select_time">Selecionar hora</string>
+    <string name="add_details_of_the_order">Adicionar detalhes do pedido</string>
+    <string name="add_images">Adicionar imagens</string>
+    <string name="place_order">Faça o pedido</string>
+
+    <string name="go">Ir</string>
+    <string name="phone_number">Número de telefone</string>
+    <string name="app_language">Idioma do aplicativo</string>
+    <string name="speak_language">Idioma</string>
+    <string name="continue_to_make_offer">Enviar Proposta</string>
+    <string name="service">Serviço</string>
+    <string name="waiting_for_offers">aguardando propostas…</string>
+    <string name="search">Procurar</string>
+    <string name="set_location">Defina localização</string>
+    <string name="building_apartment_no_optional">Nº edifício / Nº do apartamento (opcional)</string>
+    <string name="share_live_location">Compartilhar local ao vivo</string>
+    <string name="share">Compartilhar</string>
+    <string name="all_comments_from_professional_person">Todos os comentários do Profissional</string>
+    <string name="not_now">Agora não</string>
+    <string name="register_now">Registrar agora</string>
+    <string name="share_image">Compartilhar imagem</string>
+    <string name="share_location">Compartilhar localização</string>
+    <string name="change_professional_captain">Alterar profissional</string>
+    <string name="issue_bill">Facturar</string>
+    <string name="goods_delivered">Mercadorias entregues</string>
+    <string name="withdraw_offer">Retirar proposta</string>
+    <string name="talk_to_admin">Fale com o administrador</string>
+    <string name="service_completed">Serviço concluído</string>
+    <string name="file_a_complaint">Apresentar uma reclamação</string>
+    <string name="i_want_my_order">Preciso do Serviço</string>
+    <string name="ok_upper_case">OK</string>
+    <string name="today">Hoje</string>
+    <string name="select_address">Selecionar Endereço</string>
+    <string name="do_you_really_want_to_delete_this_order">Deseja realmente excluir este pedido?</string>
+    <string name="save_location_manually">Guardar local manualmente</string>
+    <string name="office">Escritório</string>
+    <string name="great">Óptimo!</string>
+    <string name="choose_an_action">Escolha uma ação</string>
+    <string name="camera">Câmera</string>
+    <string name="gallery">Galeria</string>
+    <string name="instruction">Nota</string>
+    <string name="accept">Aceitar</string>
+    <string name="reject">Rejeitar</string>
+    <string name="offers_are_coming">propostas estão chegando</string>
+    <string name="professional_offers_near_you">Propostas perto de si</string>
+    <string name="instructions">Instruções</string>
+    <string name="paginazul_collects_uses_maintains_and_discloses_information_collected_from_users_each_a_user_of_the_paginazul_com_website_site">A Paginazul arquiva informação fornecida pelos usuários.</string>
+    <string name="back">Voltar</string>
+    <string name="rate_service_provider">Avaliar prestador de serviços</string>
+    <string name="store_location_is_far">A localização é distante</string>
+    <string name="i_don_t_want_to_deliver_it">Não quero.</string>
+    <string name="pending">Pendente</string>
+    <string name="active">Ativo</string>
+    <string name="past">Passado</string>
+    <string name="please_wait_for_2_5_min_before_cancel_your_order">Por favor, aguarde 2,5 min. antes de cancelar seu pedido</string>
+    <string name="my_order">Meu pedido</string>
+    <string name="notification">Notificação</string>
+    <string name="order_time">Agendamento -\u00A0</string>
+    <string name="order_time_2">Agendamento</string>
+    <string name="order_details">Detalhes do pedido -\u00A0</string>
+    <string name="dropoff_location">Destino -\u00A0</string>
+    <string name="note_we_accept_only_cash">NOTA: Pagamento apos a conclusão do serviço</string>
+    <string name="captain_review_and_rate">Avaliação</string>
+
+    <string name="please_enter_name">Por favor digite o nome</string>
+    <string name="please_enter_email_id">Por favor digite o e-mail</string>
+    <string name="please_enter_valid_email_address">Por favor insira o endereço de e-mail válido</string>
+    <string name="please_select_app_languages">Por favor, seleccione o idioma do aplicativo</string>
+    <string name="please_select_speak_lanugae">Por favor, seleccione idioma</string>
+    <string name="please_enter_mobile_number">Digite o número do celular</string>
+    <string name="no_sub_category_found">Nenhuma subcategoria encontrada</string>
+    <string name="category_dess">Categoria -\u00A0</string>
+    <string name="sub_category_des">Subcategoria -\u00A0</string>
+    <string name="no_past_data_found">Nenhum Passado dado encontrado</string>
+    <string name="update_phone">Atualizar telefone</string>
+    <string name="r_u_sure_delete_address">Você tem certeza? Você deseja excluir esta Endereço</string>
+    <string name="new_order">Novos pedidos</string>
+    <string name="service_provider_within">Fornecedor de Serviços dentro de</string>
+    <string name="choose_your_location">Escolha Seu local</string>
+    <string name="i_want_my_service">Preciso do Serviço</string>
+    <string name="ur_order_submitted_prof_worker_will_an_offer_1">Seu pedido foi enviado, em breve receberás propostas dos profissionais da PaginAzul.</string>
+    <string name="no_professional_captain_is_available">Nenhum Profissional está disponível no momento. Por favor tente novamente mais tarde ou ligue 923283618.</string>
+    <string name="no_pending_data_found">Nenhum Pendente dado encontrado</string>
+    <string name="no_active_data_found">Nenhum Ativo dado encontrado</string>
+    <string name="me">Eu</string>
+    <string name="ratings_view_all">Classificações Ver todas</string>
+    <string name="rating">Avaliações</string>
+    <string name="user_detail">Detalhe do Usuário</string>
+    <string name="are_you_sure_you_want_accept_this_offer">Você tem certeza? Você deseja aceitar esta proposta.</string>
+    <string name="are_you_sure_you_want_reject_offer">Você tem certeza? Você deseja rejeitar esta proposta.</string>
+    <string name="offer_accept_sccussfully">A oferta aceita com sucesso!</string>
+    <string name="service_cost">Custo do serviço</string>
+    <string name="work_in_progress">Serviço em\nexecução</string>
+    <string name="change_service_provider">Alterar provedor de serviços</string>
+    <string name="please_type_something">Por favor digite algo</string>
+    <string name="invoice_created_single_line">Fatura criada</string>
+    <string name="droff_location">Local de entrega</string>
+    <string name="pickup_location_2">Ponto de partida</string>
+    <string name="you_are_not_logged_in_please_login_sign_up_further_proced">Faça o Login ou registro para continuar.</string>
+    <string name="sec">Segunda</string>
+    <string name="hello">Olá</string>
+    <string name="loading">Carregando…</string>
+    <string name="no_offer_found_for_this_request_at_this_time">Nenhuma oferta encontrada para esta solicitação no momento.</string>
+    <string name="hello_welcome_to_paginazul_family">Olá seja Bem-vindo à família Paginazul!</string>
+    <string name="next">Seguir</string>
+    <string name="please_accept_terms_and_condition">Aceite os termos e condições</string>
+    <string name="otp_sent">Código enviado</string>
+    <string name="failed">Falhou</string>
+    <string name="invite_your_frd">Convide seus amigos</string>
+    <string name="will_be_redirect_after_release_app">Será redirecionado para a Play Sore para enviar a classificação do aplicativo após o lançamento do aplicativo</string>
+    <string name="your_professional_captain_ask_for_change">O seu profissional pediu para trocar?</string>
+    <string name="please_select_reasons">Selecione o motivo</string>
+    <string name="please_enter_pckup_location">Ponto de partida</string>
+    <string name="please_select_time">Por favor selecione Hora</string>
+    <string name="please_enter_details_of_orders">Digite os detalhes do pedido</string>
+    <string name="cancelled_order_successfully">Pedido cancelado com sucesso!</string>
+    <string name="welcome_paginazul_family">Bem-vindo, família Paginazul</string>
+    <string name="please_enter_full_name">Digite o nome completo</string>
+    <string name="no_internet_connection">Sem conexão à Internet</string>
+    <string name="user_logged_in_another_device">Este usuário efetuou login em outro dispositivo.</string>
+    <string name="verification_failed">Falha na verificação</string>
+    <string name="review_invoice_simple">Revisar\nFactura</string>
+    <string name="try_again_for_new_offers">O profissional parece estar indisponível por um momento. Vá para o painel de Meu pedido para ver as ofertas.</string>
+    <string name="please_enter_location_manualyy">Insira o local manualmente ou selecione o título do local</string>
+    <string name="write_here_reason">Escreva aqui seu problema…</string>
+    <string name="offer_reject_successfully">Offer rejected successfully</string>
+    <string name="contact_professional">Contacte o Profissional</string>
+    <string name="note">Nota</string>
+    <string name="additional_cost">Custo Adicional</string>
+    <string name="payment_after_completion_of_the_service">Nota : Pagamento apos a conclusão do serviço</string>
+
+    <!--On Demand Phase 2-->
+    <string name="food_grocery"><![CDATA[Restaurantes & Lojas]]></string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="exclusive_offers">Ofertas Exclusivas</string>
+    <string name="near_by_restaurants">Restaurantes próximos de si</string>
+    <string name="view_all">Ver tudo</string>
+    <string name="grocery_stores">Lojas próximas de si</string>
+    <string name="search_by_restaurants_dishes_cuisines">Pesquise por restaurantes, pratos, menu</string>
+    <string name="restaurant">Restaurantes</string>
+    <string name="grocery">Lojas</string>
+    <string name="menu">Menu</string>
+    <string name="add_to_cart">Adicionar ao carrinho</string>
+    <string name="restaurant_info">Informações sobre restaurantes</string>
+    <string name="description">Descrição</string>
+    <string name="working_hours">Horário</string>
+    <string name="reviews">Avaliação</string>
+    <string name="bill_details">Detalhes da conta</string>
+    <string name="item_total">Total de itens</string>
+    <string name="delivery_fees">Taxa de serviço</string>
+    <string name="total_amount_to_be_paid">Valor total a ser pago</string>
+    <string name="my_cart">Meu carrinho</string>
+    <string name="change"><u>Alterar</u></string>
+    <string name="pay">Pagamento</string>
+    <string name="ongoing">Em andamento</string>
+    <string name="upcoming">Próximos</string>
+    <string name="pick_up_date">Data de Coleta</string>
+    <string name="pick_up_time">Tempo de Recolha</string>
+    <string name="visiting_date">Data de Visita</string>
+    <string name="visiting_time">Hora de Visita</string>
+    <string name="number_of_people">Número de pessoas</string>
+    <string name="delivery_address">Endereço de entrega</string>
+    <string name="payment_mode">Modo de pagamento :</string>
+    <string name="status">Status</string>
+    <string name="expect_delivery_time">Tempo de entrega previsto</string>
+    <string name="rate_order">Classificar pedido</string>
+    <string name="reorder">Reordenar</string>
+    <string name="my_favorites">Favoritos</string>
+    <string name="share_ratings_reviews"><![CDATA[Compartilhar avaliações e críticas]]></string>
+    <string name="share_ratings_as_per_your_experience_with_the_restaurant_food">Compartilhe avaliações de acordo com sua experiência com a comida do restaurante</string>
+    <string name="write_here">Escreva aqui...</string>
+    <string name="share_reviews">Partilhar avaliação</string>
+    <string name="food">Comida</string>
+    <string name="apply_filter">Aplicar filtro</string>
+    <string name="select_type">Selecione o tipo:</string>
+    <string name="filter">Filtros</string>
+    <string name="search_by_sub_category">Pesquisa por subcategorias</string>
+    <string name="sub_categroy">Subcategorias</string>
+    <string name="search_product">procurar produtos</string>
+    <string name="product">produtos</string>
+    <string name="was_kz_9_00_now_kz_7_00">Antes 9,00 Kz</string>
+    <string name="customer_services">Depoimentos de clientes</string>
+    <string name="okay">OK</string>
+    <string name="order_placed">Pedido feito!</string>
+    <string name="your_order_has_been_placed_successfully_please_make_the_payment_by_cash">Seu pedido foi feito com sucesso.\nFaça o pagamento em dinheiro</string>
+    <string name="taste">Taste:</string>
+    <string name="sweet">Sweet</string>
+    <string name="salty">Salty</string>
+    <string name="mixed">Mixed</string>
+    <string name="type">Type:</string>
+    <string name="veg">Vegetariano</string>
+    <string name="non_veg">Não vegetariano</string>
+    <string name="lunch">Lunch</string>
+    <string name="breakfast">BreakFast</string>
+    <string name="dinner">Dinner</string>
+    <string name="menu_item">Item do menu</string>
+    <string name="choose_your_taste">Escolha o seu gosto</string>
+    <string name="please_select_any_one_option">Selecione qualquer uma das opções</string>
+    <string name="choose_crust">Escolha a crosta</string>
+    <string name="you_can_choose_multiple_options">Você pode escolher várias opções</string>
+    <string name="schedule_delivery">Entrega agendada</string>
+    <string name="select_date">Selecione a data</string>
+    <string name="morning">Manhã</string>
+    <string name="shop_more_offer">Compre mais</string>
+    <string name="back_to_home"><u>Voltar ao início</u></string>
+    <string name="shops">Lojas</string>
+    <string name="offers">Promoções</string>
+    <string name="search_offers">Pesquisar promoções</string>
+    <string name="now_kz_7_00"> Now <font size="14">Kz 7.00</font></string>
+    <string name="clear">Limpar</string>
+    <string name="afternoon">Tarde</string>
+    <string name="categories">Categorias</string>
+    <string name="rating_reviews"><![CDATA[Avaliações e críticas]]></string>
+    <string name="my_orders">Meus Pedidos</string>
+    <string name="total_price_kz_20_00"><font color="#777777">Preço total</font> : Kz 20.00</string>
+    <string name="view_more"><u>Veja mais</u></string>
+    <string name="shop">Comprar</string>
+    <string name="validity_date">Data de validade</string>
+    <string name="discounted_price">Preço com desconto</string>
+    <string name="high_to_low_price">Preço mais barato</string>
+    <string name="low_to_high_price">Preço mais caro</string>
+    <string name="apply">Aplique</string>
+    <string name="meals">Restaurantes</string>
+    <string name="shopping">Lojas</string>
+    <string name="services">Serviços</string>
+    <string name="meals_and_shopping">Restaurantes e Lojas</string>
+    <string name="product_found">\u00A0Produto encontrado</string>
+    <string name="no_item">Nenhum item</string>
+    <string name="dd_mm_yyyy">dd/MM/yyyy</string>
+    <string name="search_by_grocery_shops">Pesquise por lojas, produtos</string>
+    <string name="select_day">Selecione o dia</string>
+    <string name="time_slot">Horário</string>
+    <string name="store_info">Informações da loja</string>
+    <string name="help">Ajuda</string>
+    <string name="search_menu">procurar menu</string>
+    <string name="was">Antes\u00A0</string>
+    <string name="now">\u00A0Agora\u00A0</string>
+    <string name="quantity">"Quantidade : "</string>
+    <string name="small_reviews">" avaliações"</string>
+    <string name="store_24">" Loja 24x7"</string>
+    <string name="ratings">" Avaliações"</string>
+    <string name="restaurant_latest_reviews">Avaliações mais recentes do restaurante</string>
+    <string name="choose_delivery_day">Escolha o dia de entrega</string>
+    <string name="evening">Tarde</string>
+    <string name="please_choose_delivery_day">Por favor escolha o dia de entrega</string>
+    <string name="please_select_time_slot">Selecione o horário</string>
+    <string name="mins">" minutos"</string>
+    <string name="min_order">"Pedido Min. : "</string>
+    <string name="sec_ago">" segundo atrás"</string>
+    <string name="seconds_ago">" segundos atrás"</string>
+    <string name="min_ago">" min atrás"</string>
+    <string name="mins_ago">" minutos atrás"</string>
+    <string name="hour_ago">" hora atrás"</string>
+    <string name="hours_ago">" horas atrás"</string>
+    <string name="day_ago">" dia atrás"</string>
+    <string name="days_ago">" dias atrás"</string>
+    <string name="small_now">agora</string>
+    <string name="my_order_id">"Nº do pedido : "</string>
+    <string name="total_price">"Preço total : "</string>
+    <string name="cash_on_delivery">Pagamento na entrega</string>
+    <string name="select">Selecione</string>
+    <string name="time_slot_not_found">Horário não disponível</string>
+    <string name="choose_an_email_client">Escolha um cliente de e-mail</string>
+    <string name="there_are_no_mail">Email do cliente não está registrado.</string>
+    <string name="confirmed">Confirmado</string>
+    <string name="in_the_kitchen">Na cozinha</string>
+    <string name="out_for_delivery">A Caminho</string>
+    <string name="please_select_low_to_hight">Selecione o preço de alto para baixo ou de baixo para alto</string>
+    <string name="please_select_validity_date">Por favor selecione uma data válida</string>
+    <string name="no_cuisine">Menu não Disponível</string>
+    <string name="minimum_value_paid_value">Valor mínimo por pedido é\u00A0</string>
+    <string name="no_favorites">Sem favoritos</string>
+
+
+    <string-array name="languages">
+        <item>Idioma</item>
+        <item>Inglês</item>
+        <item>Português</item>
+    </string-array>
+
+    <string-array name="select_time">
+        <item>Daqui a 1 hora</item>
+        <item>Daqui a 2 hora</item>
+        <item>Daqui a 3 hora</item>
+        <item>Daqui a 4 hora</item>
+        <item>Acima a 5 hora</item>
+        <item>Daqui a 1 dia</item>
+        <item>Daqui a 2 dias</item>
+        <item>Daqui a 3 dias</item>
+    </string-array>
+
+    <string-array name="reasons">
+        <item>Selecionar motivo</item>
+        <item>Não é adequado para mim</item>
+        <item>Outro motivo de cancelamento</item>
+    </string-array>
+
+    <string-array name="admin_reasons">
+        <item>Selecionar motivo</item>
+        <item>Usuário inapropriado</item>
+        <item>Parece um usuário falso</item>
+        <item>De outros</item>
+    </string-array>
+
+    <string-array name="cancel_reasons">
+        <item>Selecionar motivo</item>
+        <item>Não é mais necessário</item>
+        <item>Capitão será mais tarde</item>
+        <item>De outros</item>
+    </string-array>
+
+    <string-array name="contact_admin">
+        <item>Selecionar motivo</item>
+        <item>Deseja enviar uma reclamação</item>
+        <item>Deseja fornecer feedback</item>
+        <item>Outros</item>
+    </string-array>
+
+</resources>

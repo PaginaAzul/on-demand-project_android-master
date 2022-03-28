@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_you_want"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_25"
+    android:visibility="gone"
+    android:layout_marginRight="@dimen/dp_25"
+    android:layout_marginTop="@dimen/dp_50"
+    android:background="@color/white">
+
+
+    <com.pagin.azul.view.RobotoSemiBoldTextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/whichservice"
+        android:textColor="@color/colorBlue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.pagin.azul.view.RobotoRegularButton
+        android:id="@+id/btn_required"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_map_back"
+        android:elevation="@dimen/dp_5"
+        android:text="@string/require_service"
+        android:textAllCaps="false"
+        android:textColor="@color/purpalMedium"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toTopOf="@+id/btn_provide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+    <com.pagin.azul.view.RobotoRegularButton
+        android:id="@+id/btn_provide"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_map_back"
+        android:elevation="@dimen/dp_5"
+        android:text="@string/provide_service"
+        android:textAllCaps="false"
+        android:textColor="@color/purpalMedium"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_required" />
+</androidx.constraintlayout.widget.ConstraintLayout>

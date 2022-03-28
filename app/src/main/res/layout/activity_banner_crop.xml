@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_croping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorButton">
+
+    <!--<com.isseiaoki.simplecropview.CropImageView-->
+        <!--android:id="@+id/cropImageView"-->
+        <!--android:paddingTop="@dimen/dp10"-->
+        <!--android:paddingBottom="@dimen/dp10"-->
+        <!--android:paddingLeft="@dimen/dp10"-->
+        <!--android:paddingRight="@dimen/dp10"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--custom:scv_crop_mode="fit_image"-->
+        <!--custom:scv_background_color="#cc000000"-->
+        <!--custom:scv_handle_color="@color/colorAccent"-->
+        <!--custom:scv_guide_color="@color/colorAccent"-->
+        <!--custom:scv_overlay_color="@color/colorWhite"-->
+        <!--custom:scv_frame_color="@color/colorAccent"-->
+        <!--custom:scv_handle_size="8dp"-->
+        <!--custom:scv_touch_padding="10dp"-->
+        <!--custom:scv_handle_show_mode="show_always"-->
+        <!--custom:scv_guide_show_mode="not_show"-->
+        <!--custom:scv_min_frame_size="@dimen/dp_100"-->
+        <!--android:layout_above="@+id/bottom"-->
+        <!--custom:scv_guide_stroke_weight="1dp"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/black_button_background"-->
+            <!--android:text="@string/cancel"-->
+            <!--android:textColor="@android:color/white"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@color/line_button"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/done"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/black_button_background"-->
+            <!--android:text="@string/save"-->
+            <!--android:textColor="@android:color/white"/>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

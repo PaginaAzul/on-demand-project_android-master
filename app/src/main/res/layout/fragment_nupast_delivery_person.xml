@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NUPastDeliveryPersonFrag">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_past"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/iv_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:src="@drawable/blank_data" />
+
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_blank"
+        android:gravity="center_horizontal"
+        android:text="@string/no_past_data_found"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone" />
+
+</RelativeLayout>

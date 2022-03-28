@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPrentView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivRestaurants"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRestaurants"
+                app:layout_constraintEnd_toEndOf="@+id/ivRestaurants"
+                app:layout_constraintStart_toStartOf="@+id/ivRestaurants"
+                app:layout_constraintTop_toTopOf="@+id/ivRestaurants" />
+
+            <ImageView
+                android:id="@+id/ivLikeHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRestaurants"
+                app:layout_constraintEnd_toEndOf="@+id/ivRestaurants" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ivLikeHome"
+                app:layout_constraintEnd_toEndOf="@+id/ivLikeHome"
+                app:layout_constraintStart_toStartOf="@+id/ivLikeHome"
+                app:layout_constraintTop_toTopOf="@+id/ivLikeHome"
+                app:lottie_fileName="layer.json" />
+
+
+            <RatingBar
+                android:id="@+id/ivRatinngs"
+                style="@style/CustomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="8dp"
+                android:stepSize=".5"
+                android:isIndicator="true"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRestaurants"
+                app:layout_constraintStart_toStartOf="@+id/ivRestaurants" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvRatingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="4.2 "
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:maxLength="3"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRatinngs"
+                app:layout_constraintStart_toEndOf="@+id/ivRatinngs"
+                app:layout_constraintTop_toTopOf="@+id/ivRatinngs" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="(200 reviews)"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRatingHome"
+                app:layout_constraintStart_toEndOf="@+id/tvRatingHome"
+                app:layout_constraintTop_toTopOf="@+id/tvRatingHome" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLength="4"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRestaurantNameHome"
+                app:layout_constraintEnd_toStartOf="@+id/tvdistance2"
+                app:layout_constraintTop_toTopOf="@+id/tvRestaurantNameHome"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvdistance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="km"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRestaurantNameHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvRestaurantNameHome" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvRestaurantNameHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvdistance"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRestaurants" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvRestauAddressHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivdestLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llFoodType"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <ImageView
+                android:id="@+id/ivdestLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRestauAddressHome"
+                app:layout_constraintEnd_toEndOf="@+id/tvdistance"
+                app:layout_constraintTop_toTopOf="@+id/tvRestauAddressHome" />
+
+
+            <LinearLayout
+                android:id="@+id/llFoodType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/tvdistance"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvRestaurantNameHome"
+                app:layout_constraintTop_toBottomOf="@+id/tvRestaurantNameHome">
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvCuisine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodTypeHome3"
+                    app:layout_constraintStart_toEndOf="@+id/view26" />
+
+                <!--<com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvFoodTypeHome3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Italian"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/view25"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/robotoRegularTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Chinese"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintStart_toEndOf="@+id/view27" />
+
+                <View
+                    android:id="@+id/view25"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view26"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintStart_toEndOf="@+id/tvFoodTypeHome3"
+                    app:layout_constraintTop_toTopOf="@+id/tvFoodTypeHome2" />
+
+                <View
+                    android:id="@+id/view27"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/robotoRegularTextView"
+                    app:layout_constraintStart_toEndOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintTop_toTopOf="@+id/robotoRegularTextView" />-->
+
+
+                <!--                <com.OWIN.Utility.SourceSansProRegularTextView-->
+                <!--                    android:id="@+id/tvFoodTypeHome"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:drawableLeft="@drawable/bg_dot_circle2"-->
+                <!--                    android:drawablePadding="5dp"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:textColor="@color/light_grey"-->
+                <!--                    android:textSize="13sp"-->
+                <!--                    app:layout_constraintStart_toStartOf="@+id/tvRestaurantNameHome"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/tvRestaurantNameHome" />-->
+
+            </LinearLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

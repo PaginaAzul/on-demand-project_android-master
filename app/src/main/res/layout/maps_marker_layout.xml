@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rrrrr"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_jobMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 jobs"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

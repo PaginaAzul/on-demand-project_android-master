@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.ShareLocationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar_with_back_btn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/mapview"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:apiKey="AIzaSyDPf4CCfDhwAE95PYIQqapM_ixUUt4er20" />
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/centreLocationRl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:splitMotionEvents="false"-->
+                <!--android:visibility="visible">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/centreLocationPin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/centreLocationPivot"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/map_pin"-->
+                    <!--android:tag="mwar" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/centreLocationPivot"-->
+                    <!--android:layout_width="1px"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:layout_centerInParent="true" />-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_0"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="59dp"
+                android:background="@drawable/map_desc_back"
+                android:gravity="center"
+                android:padding="@dimen/dp_5">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_1"
+                    android:src="@drawable/save_loc" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/showadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_toRightOf="@+id/img"
+                    android:text="@string/share_live_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showadd"
+                    android:layout_marginStart="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:text="H-146/147 Sector 63 Noida"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <com.pagin.azul.view.RobotoRegularButton
+                    android:id="@+id/btn_share"
+                    android:layout_width="160dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_sign_in"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

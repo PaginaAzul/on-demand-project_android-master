@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "154765922030",
+    "firebase_url": "https://paginazul-8a377.firebaseio.com",
+    "project_id": "paginazul-8a377",
+    "storage_bucket": "paginazul-8a377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154765922030:android:8d9ad9cad562d7f0a3adff",
+        "android_client_info": {
+          "package_name": "com.pagin.azul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154765922030-65leqjmirs4ccvojs3p8b84ij3g1ktqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagin.azul",
+            "certificate_hash": "df33c45a02e0dbfabd6e4283119d83d25b8f32b7"
+          }
+        },
+        {
+          "client_id": "154765922030-5ck5ehqivvhagho4dc24ps63uvhoms2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-vqlV0NvPs4fcd7M3f9QIO2Y8_D8O2Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154765922030-5ck5ehqivvhagho4dc24ps63uvhoms2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

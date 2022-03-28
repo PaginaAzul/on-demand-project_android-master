@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edt_map_search">
+
+    <com.pagin.azul.view.RobotoRegularEditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/edt_map_search"
+        android:drawableStart="@drawable/search"
+        android:gravity="center"
+        android:hint="Search"
+        android:paddingStart="@dimen/dp_110"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_100"
+        android:paddingBottom="@dimen/dp_10"
+        android:textColorHint="@color/textgrey"
+        android:visibility="gone" />
+
+    <ExpandableListView
+        android:id="@+id/expandible_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_search"></ExpandableListView>
+
+
+</RelativeLayout>

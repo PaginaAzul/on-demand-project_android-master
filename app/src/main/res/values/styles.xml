@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorControlHighlight">@color/black</item>-->
+    <!--<item name="colorPrimary">@color/windowBackground</item>-->
+    <!--<item name="colorPrimaryDark">@color/white_transparancy</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!--<style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorPrimary">@color/windowBackground</item>-->
+    <!--<item name="colorPrimaryDark">@color/windowBackground</item>-->
+    <!--</style>-->
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAppThemeStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--        <item name="colorPrimary">@color/actionBarBackgroundColor</item>-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="colorPrimaryDark">@color/colorLightWhite</item>
+        <!--        <item name="colorAccent">@color/pistaDark</item>-->
+
+    </style>
+
+    <style name="MyAppThemeStatusBarTakeTour" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--        <item name="colorPrimary">@color/actionBarBackgroundColor</item>-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <!--        <item name="colorAccent">@color/pistaDark</item>-->
+
+    </style>
+
+    <style name="ThemeDialogCustom" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/canvas_rating_bar</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:layout_margin">5dip</item>
+
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="smallRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/canvas_rating_bar</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="foodRatingBarlarge" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/canvas_bigrating_bar</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:layout_margin">5dip</item>
+
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="AppTheme" tools:targetApi="lollipop">
+        <item name="android:dialogTheme">@style/dialogthm</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+    </style>
+
+    <style name="dialogthm" parent="Base.V23.Theme.AppCompat" />
+
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker" tools:targetApi="lollipop">
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:dialogTheme">@style/dialogthm</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    //////////////////date picker///////////////////
+
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/bg_rating</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">10dp</item>
+    </style>
+
+    <style name="editColor" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#EF3644</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--<style name="DialogTheme">-->
+    <!--<item name="android:windowEnterAnimation">@anim/slide_left</item>-->
+    <!--<item name="android:windowExitAnimation">@anim/slide_rightd</item>-->
+    <!--</style>-->
+
+</resources>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUp">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_with_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivSignUp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:id="@+id/edtFullNameSignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:visibility="gone"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivSignUp" />
+
+            <ToggleButton
+                android:id="@+id/toggleBtnFullName"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_toggle_purpal_btn"
+                android:checked="true"
+                android:text=""
+                android:visibility="gone"
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintBottom_toBottomOf="@+id/edtFullNameSignUp"
+                app:layout_constraintEnd_toEndOf="@+id/edtFullNameSignUp"
+                app:layout_constraintTop_toTopOf="@+id/edtFullNameSignUp" />
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:id="@+id/edtUserNameSignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:visibility="gone"
+                android:hint="@string/user_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtFullNameSignUp" />
+
+            <ToggleButton
+                android:id="@+id/toggleBtnUserName"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_toggle_purpal_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:visibility="gone"
+                android:textOn=""
+                app:layout_constraintBottom_toBottomOf="@+id/edtUserNameSignUp"
+                app:layout_constraintEnd_toEndOf="@+id/edtUserNameSignUp"
+                app:layout_constraintTop_toTopOf="@+id/edtUserNameSignUp" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="20dp"
+                android:text="@string/select_name"
+                android:textColor="@color/blacklight"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleBtnFullName" />
+
+            <RadioGroup
+                android:id="@+id/rgSignUp2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView55"
+                app:layout_constraintTop_toBottomOf="@+id/textView55">
+
+                <RadioButton
+                    android:id="@+id/rbFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_radio_btn"
+                    android:paddingLeft="12dp"
+                    android:text="@string/full_name"
+                    android:textColor="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <RadioButton
+                    android:id="@+id/rbUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:button="@drawable/bg_radio_btn"
+                    android:checked="true"
+                    android:paddingLeft="12dp"
+                    android:text="@string/user_name"
+                    android:textColor="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular" />
+
+            </RadioGroup>
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:id="@+id/edtEnterName"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="@string/enter_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgSignUp2" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="20dp"
+                android:text="Select Your Gender"
+                android:textColor="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEnterName" />
+
+            <RadioGroup
+                android:id="@+id/rgSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_radio_btn"
+                    android:paddingLeft="12dp"
+                    android:text="Female"
+                    android:textColor="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular"/>
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:button="@drawable/bg_radio_btn"
+                    android:paddingLeft="12dp"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular"/>
+
+            </RadioGroup>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/edtBirthYear"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:hint="@string/select_your_birth_year"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgSignUp" />
+
+            <ImageView
+                android:id="@+id/ivCalandar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/edtBirthYear"
+                app:layout_constraintEnd_toEndOf="@+id/edtBirthYear"
+                app:layout_constraintTop_toTopOf="@+id/edtBirthYear"
+                app:srcCompat="@drawable/calendar_b" />
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:id="@+id/edtEmailSignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtBirthYear" />
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCountrySignUp"
+                app:layout_constraintEnd_toEndOf="@+id/tvCountrySignUp"
+                app:layout_constraintStart_toStartOf="@+id/tvCountrySignUp" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/tvCountrySignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_edit_text"
+                android:drawableRight="@drawable/down_s"
+                android:ems="10"
+                app:ccp_defaultNameCode="SA"
+                app:ccp_contentColor="@color/blacklight"
+                app:ccp_showFlag="false"
+                app:ccp_showFullName="true"
+                app:ccp_showPhoneCode="true"
+                app:ccp_textSize="13sp"
+                android:hint="@string/select_your_Country"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/blacklight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmailSignUp" />
+
+            <Spinner
+                android:id="@+id/spinnerAppLag"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAppLanguageSignUp"
+                app:layout_constraintEnd_toEndOf="@+id/tvAppLanguageSignUp"
+                app:layout_constraintStart_toStartOf="@+id/tvAppLanguageSignUp" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvAppLanguageSignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edit_text"
+                android:drawablePadding="@dimen/dp_8"
+                android:drawableRight="@drawable/down_s"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/select_app_language"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCountrySignUp" />
+
+
+            <Spinner
+                android:id="@+id/spinnerSpeakLang"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSpeakLanguageSignUp"
+                app:layout_constraintEnd_toEndOf="@+id/tvSpeakLanguageSignUp"
+                app:layout_constraintStart_toStartOf="@+id/tvSpeakLanguageSignUp" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/tvSpeakLanguageSignUp"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableRight="@drawable/down_s"
+                android:drawablePadding="@dimen/dp_8"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/select_speak_language"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/blacklight"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppLanguageSignUp" />
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/signUpBtn"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_sign_in"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSpeakLanguageSignUp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

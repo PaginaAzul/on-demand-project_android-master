@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:visibility="visible"
+    android:id="@+id/container_select_services"
+    android:layout_marginLeft="@dimen/dp_25"
+    android:layout_marginRight="@dimen/dp_25"
+    android:layout_marginTop="@dimen/dp_50"
+    android:layout_height="wrap_content">
+
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/select_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.pagin.azul.view.RobotoRegularButton
+        android:id="@+id/btn_derlivery_prsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_map_back"
+        android:text="@string/delivery_person"
+        android:textAllCaps="false"
+        android:textColor="@color/purpalMedium"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_prfsnal_worker"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.pagin.azul.view.RobotoRegularButton
+        android:id="@+id/btn_prfsnal_worker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_map_back"
+        android:text="@string/professional_worker"
+        android:textAllCaps="false"
+        android:textColor="@color/purpalMedium"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_derlivery_prsn"
+        app:layout_constraintTop_toTopOf="@+id/btn_derlivery_prsn" />
+
+    <TextView
+        android:id="@+id/tvDelivery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="0 Captain Delivery within"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="@+id/btn_derlivery_prsn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_derlivery_prsn"
+        app:layout_constraintTop_toBottomOf="@+id/btn_derlivery_prsn" />
+
+    <TextView
+        android:id="@+id/tvProfessional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="0 Professional within"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="@+id/btn_prfsnal_worker"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_prfsnal_worker"
+        app:layout_constraintTop_toBottomOf="@+id/btn_derlivery_prsn" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/spin_const_del"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/captian_distance_black_wht"
+        android:text="20 KM  "
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvDelivery"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDelivery"
+        app:layout_constraintTop_toBottomOf="@+id/tvDelivery"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 KM  "
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            android:padding="@dimen/dp_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/down_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinner"
+            app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/captian_distance_black_wht"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvProfessional"
+        app:layout_constraintStart_toStartOf="@+id/tvProfessional"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfessional"/>
+
+
+    <TextView
+        android:id="@+id/tv_prof_wkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 KM  "
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout14"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout14"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout14" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:padding="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout14"
+        app:layout_constraintEnd_toEndOf="@+id/tv_prof_wkr"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout14"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout14" />
+
+
+    <ImageView
+        android:id="@+id/iv_spinner1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner1"
+        app:layout_constraintStart_toEndOf="@+id/spinner1"
+        app:layout_constraintTop_toTopOf="@+id/spinner1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

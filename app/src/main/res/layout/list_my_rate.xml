@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:padding="@dimen/dp_10">
+
+        <com.pagin.azul.view.RobotoBoldTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User123"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <RatingBar
+            android:id="@+id/rb_ratting"
+            style="@style/foodRatingBar"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_user_name"
+            android:numStars="5"
+            android:padding="@dimen/dp_2"
+            android:rating="1" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/rat_cmmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_regular" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/grey" />
+
+</LinearLayout>

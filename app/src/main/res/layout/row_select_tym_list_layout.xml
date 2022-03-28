@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/l_container"
+    android:orientation="vertical">
+
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_timeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Within 1 hours"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_14"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.ActiveRequireProfessionalFrag">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

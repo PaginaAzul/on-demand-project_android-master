@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onphasesecond.fragments.MyOrdersFrag">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/grey_color_stroke"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvPast"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/past"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"/>
+        
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvOnGoing"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_weight="1"
+            android:background="@drawable/tab_layout_ongoing"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center"
+            android:text="@string/ongoing"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"/>
+        
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvUpcoming"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center"
+            android:text="@string/upcoming"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/frameMyOrders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

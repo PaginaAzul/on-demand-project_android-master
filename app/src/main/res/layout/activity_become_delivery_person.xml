@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BecomeDeliveryPersonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/actionBarBackgroundColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/back" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/become_delivery_person"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delivery_z" />
+
+
+                <com.pagin.azul.view.RobotoLightItalicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="@string/upload_ID_txt"
+                    android:textColor="@color/purpalMedium"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_id1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/canvas_filter_bg"
+                    android:orientation="vertical">
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_id1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@color/color_transparant"
+                        android:drawableEnd="@drawable/upload"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Upload ID-1"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_id_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:id="@+id/iv_id1_image"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_image" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_id2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/canvas_filter_bg"
+                    android:orientation="vertical">
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_id2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@color/color_transparant"
+                        android:drawableEnd="@drawable/upload"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Upload ID-2"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_id_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:id="@+id/iv_id2_image"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_image" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_iv_prf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/iv_prf"
+                        android:layout_width="@dimen/dp_120"
+                        android:layout_height="@dimen/dp_100"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/default_p" />
+
+                    <ImageView
+                        android:id="@+id/iv_varify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_prf"
+                        android:layout_alignEnd="@+id/iv_prf"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:visibility="gone"
+                        android:src="@drawable/verify" />
+
+                </RelativeLayout>
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/take_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_prf"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/upload_verified_icon"
+                    android:textColor="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.pagin.azul.view.RobotoRegularEditText
+                    android:id="@+id/about_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="4"
+                    android:paddingStart="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_15"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:background="@drawable/bg_edit_txt_desc"
+                    android:hint="Write something about"
+                    android:textColorHint="@color/blacklight"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_vehicle_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_vehicle_type"
+                    android:layout_width="400dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tv_vehicle_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Vehicle Type"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:paddingEnd="@dimen/dp_15"
+                    android:textColorHint="@color/blacklight"
+                    android:padding="@dimen/dp_15"
+                    android:paddingStart="@dimen/dp_20"
+                    android:textSize="@dimen/text_size_regular" />
+                </RelativeLayout>
+
+                <com.pagin.azul.view.RobotoRegularEditText
+                    android:id="@+id/vehicle_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Vehicle Number"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_15"
+                    android:textColorHint="@color/blacklight"
+                    android:paddingBottom="@dimen/dp_15"
+
+                    android:paddingStart="@dimen/dp_20"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <LinearLayout
+                    android:id="@+id/ll_v_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/canvas_filter_bg"
+                    android:orientation="vertical">
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_3"
+                        android:background="@color/grey"
+                        android:drawableEnd="@drawable/upload"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/blacklight"
+                        android:text="Upload Vehicle License"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:id="@+id/iv_License"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_image" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <com.pagin.azul.view.RobotoRegularEditText
+                    android:id="@+id/insurance_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Insurance Number"
+                    android:padding="@dimen/dp_15"
+                    android:textColorHint="@color/blacklight"
+                    android:paddingStart="@dimen/dp_20"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <LinearLayout
+                    android:id="@+id/ll_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/canvas_filter_bg"
+                    android:orientation="vertical">
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_3"
+                        android:background="@color/grey"
+                        android:drawableEnd="@drawable/upload"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:padding="@dimen/dp_10"
+                        android:text="Upload Insurance"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:id="@+id/iv_insurance"
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_image" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <com.pagin.azul.view.RobotoRegularEditText
+                    android:id="@+id/bank_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Bank A/C IBAN (Optional)"
+                    android:padding="@dimen/dp_15"
+                    android:textColorHint="@color/blacklight"
+                    android:paddingStart="@dimen/dp_20"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+                <com.pagin.azul.view.RobotoRegularEditText
+                    android:id="@+id/emergency_contct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Emergency Contact"
+                    android:padding="@dimen/dp_15"
+                    android:inputType="phone"
+                    android:textColorHint="@color/blacklight"
+                    android:paddingStart="@dimen/dp_20"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+                <com.pagin.azul.view.RobotoSemiBoldButton
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_sign_in"
+                    android:text="Submit"
+                    android:layout_marginBottom="@dimen/dp_25"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

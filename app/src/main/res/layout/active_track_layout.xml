@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_you_want"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp_25"
+    android:layout_marginTop="@dimen/dp_80"
+    android:layout_marginRight="@dimen/dp_25"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:padding="@dimen/dp_11"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/tv_point"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/point_1"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/tv_point3"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/point_2"
+            app:layout_constraintEnd_toStartOf="@+id/view4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/tv_point4"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/point_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tv_point1"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/point_2"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="331dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_point"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/tv_dropoffstatus"
+            app:layout_constraintEnd_toStartOf="@+id/tv_point4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_point1"
+            app:layout_constraintTop_toTopOf="@+id/tv_point1" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_point"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/tv_pickupsatatus"
+            app:layout_constraintEnd_toStartOf="@+id/tv_point1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_point3"
+            app:layout_constraintTop_toTopOf="@+id/tv_point3" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_point"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/robotoRegularTextView5"
+            app:layout_constraintEnd_toStartOf="@+id/tv_point3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_point"
+            app:layout_constraintTop_toTopOf="@+id/tv_point" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/workertopickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="4.17 KM"
+            android:textColor="@color/colorPink"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/tv_point4"
+            app:layout_constraintStart_toEndOf="@+id/tv_point1"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/pickuptodrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="4.17 KM"
+            android:textColor="@color/colorPink"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintEnd_toStartOf="@+id/tv_point1"
+            app:layout_constraintStart_toStartOf="@+id/view4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/starttopickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="4.17 KM"
+            android:textColor="@color/colorPink"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/robotoRegularTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Start"
+            android:textColor="@color/blacklight"
+            android:textSize="@dimen/text_size_regular"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/tv_point"
+            app:layout_constraintTop_toBottomOf="@+id/tv_point" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/edit_invoice"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/text_size_regular"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/robotoRegularTextView5"
+            app:layout_constraintStart_toStartOf="@+id/robotoRegularTextView5"
+            app:layout_constraintTop_toBottomOf="@+id/robotoRegularTextView5" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvCreatedInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/invoice_created"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dropoffstatus"
+            app:layout_constraintStart_toStartOf="@+id/tv_dropoffstatus"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dropoffstatus"
+
+            />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvArrived"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/arrived"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_pickupsatatus"
+            app:layout_constraintStart_toStartOf="@+id/tv_pickupsatatus"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickupsatatus"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tvWorkDone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_deliveredstatus"
+            app:layout_constraintStart_toStartOf="@+id/tv_deliveredstatus"
+            app:layout_constraintTop_toBottomOf="@+id/tv_deliveredstatus" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_pickupsatatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Pickup"
+            android:textColor="@color/blacklight"
+            android:textSize="@dimen/text_size_regular"
+            app:layout_constraintEnd_toStartOf="@+id/view4"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_point3" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_dropoffstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Dropoff"
+            android:textColor="@color/blacklight"
+            android:textSize="@dimen/text_size_regular"
+            app:layout_constraintEnd_toEndOf="@+id/tv_point1"
+            app:layout_constraintStart_toStartOf="@+id/tv_point1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_point1" />
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_deliveredstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Delivered"
+            android:textColor="@color/blacklight"
+            android:textSize="@dimen/text_size_regular"
+            app:layout_constraintEnd_toEndOf="@+id/tv_point4"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_point4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.1dp"
+        android:background="@color/actionBarBackgroundColor"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/back" />
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_setting"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/dp_5"
+                android:textColor="@color/blacklight"
+                android:text="@string/normal_user_notification"/>
+            <ToggleButton
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="41dp"
+                android:layout_height="31dp"
+                android:background="@drawable/bg_toggle_btn"
+                android:checked="false"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/toggleBtn"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/grey"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_5"
+            android:id="@+id/tv_aboutUs"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:textColor="@color/blacklight"/>
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:id="@+id/tv_contactUs"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/blacklight"/>
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/term_and_condition"
+            android:padding="@dimen/dp_5"
+            android:id="@+id/tv_terms_condition"
+            android:textColor="@color/blacklight"/>
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="@string/pricy_policy"
+            android:id="@+id/tv_privacyPolicy"
+            android:textColor="@color/blacklight"/>
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_logout"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+</RelativeLayout>

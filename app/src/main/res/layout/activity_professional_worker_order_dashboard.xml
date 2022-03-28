@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.ProfessionalWorkerOrderDashboardActivity">
+
+
+<RelativeLayout
+    android:id="@+id/rey_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionBarBackgroundColor"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar_map_layout" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/l_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rey_layout"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/canvas_offer_btn_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="New"
+         />
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/canvas_offer_btn_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="Pending" />
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/canvas_offer_btn_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="Active"
+        />
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_past"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/canvas_offer_btn_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="Past"
+         />
+
+
+</LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:lottie_fileName="no_internet_connection.json" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/l_layout">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5" />
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

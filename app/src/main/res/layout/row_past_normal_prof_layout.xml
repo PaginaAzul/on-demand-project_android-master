@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/bg_offerdetail_corner"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_marginStart="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:background="@color/colorLightGreen">
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/order_id"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_date"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.pagin.azul.view.RobotoSemiBoldTextView
+                        android:id="@+id/orderId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="4dp"
+                        android:layout_toRightOf="@+id/tv_order"
+                        android:text="1455558"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_order"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_date"
+                        app:layout_constraintStart_toEndOf="@+id/tv_order" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="4dp"
+                        android:layout_toLeftOf="@+id/tv_time"
+                        android:text="23Jan,2019"
+                        android:textSize="@dimen/sp_10"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_time" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:text="04:20 PM"
+                        android:textSize="@dimen/sp_10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_delivery_offer_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/order_location"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvOrderLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="15dp"
+                        android:text=""
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_delivery_offer_location"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/tv_delivery_offer_location" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_delivery_offer_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/category"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_sub_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/sub_category"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvSubCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorPink" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_sub_order_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/order_detail"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvOrderDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/colorPink" />
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_invoice_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/invoice_details"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/invoice_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_toStartOf="@+id/invoice_date"
+                        android:textColor="@color/textgrey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/invoice_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="12/01/2019"
+                        android:textColor="@color/textgrey"
+                        android:textSize="@dimen/text_size_small" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_delivery_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/offer_amount"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/offerAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:text="16 Euro"
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAdditionalCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/prf_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/additional_cost"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvPrfOfr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:text="0 Euro"
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_tax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tax"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:textColor="@color/blacklight"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvTax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="6.00Euro"
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_15">
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/total"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colortext"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="31.00Euro"
+                        android:textColor="@color/purpalMedium"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@color/colorLightGreen" />
+
+
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvReviewrate"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/captain_review_and_rate"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium_large" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:id="@+id/rlRating"
+                    android:layout_marginStart="@dimen/dp_10">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_rat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/yellow">
+
+                        <com.pagin.azul.view.RobotoRegularTextView
+                            android:id="@+id/tv_rat_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:text="5"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dp_13" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_13"
+                            android:layout_height="@dimen/dp_13"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dp_3"
+                            android:paddingEnd="@dimen/dp_4"
+                            android:layout_toRightOf="@+id/tv_rat_num"
+                            android:src="@drawable/star" />
+                    </RelativeLayout>
+
+
+
+                    <com.pagin.azul.view.RobotoRegularTextView
+                        android:id="@+id/tvratingtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/rl_rat"
+                        android:text="@string/payment_after_completion_of_the_service"
+                        android:textSize="@dimen/text_size_regular" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

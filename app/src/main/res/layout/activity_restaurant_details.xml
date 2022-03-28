@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".onphasesecond.activity.RestaurantDetails">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/tvAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/ivRestroImage"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/food_thali"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvdistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                    app:layout_constraintStart_toStartOf="@+id/ivBackAddToCart" />
+
+                <ImageView
+                    android:id="@+id/ivFav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/fav_un"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ivRestroImage" />
+
+                <ImageView
+                    android:id="@+id/ivInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMinOrderAddToCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvMinOrderAddToCard"
+                    app:srcCompat="@drawable/info" />
+
+
+                <ImageView
+                    android:id="@+id/ivBackAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivRestroImage"
+                    app:srcCompat="@drawable/back_button" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ivRestroImage"
+                    app:layout_constraintStart_toStartOf="@+id/ivRestroImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivRestroImage" />
+
+
+                <RatingBar
+                    android:id="@+id/ivRating"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:isIndicator="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvReview"
+                    app:layout_constraintEnd_toStartOf="@+id/tvAvgRating"
+                    app:layout_constraintTop_toTopOf="@+id/tvReview"
+                    app:layout_constraintVertical_bias="0.444" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvAvgRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:maxLength="3"
+                    android:text=""
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvReview"
+                    app:layout_constraintEnd_toStartOf="@+id/tvReview"
+                    app:layout_constraintTop_toTopOf="@+id/tvReview" />
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/light_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTimeAddToCard"
+                    app:layout_constraintStart_toEndOf="@+id/tvTimeAddToCard"
+                    app:layout_constraintTop_toTopOf="@+id/tvTimeAddToCard" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycerAddToCartHori"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerAddToCartVertically"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recycerAddToCartHori"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text=""
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvRestroTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvRestroTitle"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <LinearLayout
+                    android:id="@+id/llCousine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvRestroTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRestroTitle">
+
+
+                </LinearLayout>
+
+                <!--<com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvFoodTypeHome2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Italian"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"
+                    android:visibility="visible"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodTypeHome3"
+                    app:layout_constraintStart_toEndOf="@+id/view26" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvFoodTypeHome3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Italian"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toEndOf="@+id/view25"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRestroTitle" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/robotoRegularTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center_vertical"
+                    android:text="Chinese"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp"
+                    android:visibility="visible"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintStart_toEndOf="@+id/view27" />
+
+                <View
+                    android:id="@+id/view25"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvFoodTypeHome3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvFoodTypeHome3" />
+
+                <View
+                    android:id="@+id/view26"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintStart_toEndOf="@+id/tvFoodTypeHome3"
+                    app:layout_constraintTop_toTopOf="@+id/tvFoodTypeHome2" />
+
+                <View
+                    android:id="@+id/view27"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_dot_circle"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/robotoRegularTextView"
+                    app:layout_constraintStart_toEndOf="@+id/tvFoodTypeHome2"
+                    app:layout_constraintTop_toTopOf="@+id/robotoRegularTextView" />-->
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvRestroAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text=""
+                    app:layout_constraintEnd_toStartOf="@+id/ivDistance"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llCousine" />
+
+                <ImageView
+                    android:id="@+id/ivDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/navi"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvRestroAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvRestroAddress" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvTimeAddToCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/deliverys"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="@+id/tvRestroAddress"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRestroAddress" />
+
+                <com.pagin.azul.view.RobotoRegularTextView
+                    android:id="@+id/tvMinOrderAddToCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:drawableLeft="@drawable/cart_a"
+                    android:drawablePadding="10dp"
+                    android:text="Min. Order : "
+                    app:layout_constraintBaseline_toBaselineOf="@+id/tvTimeAddToCard"
+                    app:layout_constraintStart_toEndOf="@+id/view13" />
+
+                <com.pagin.azul.view.RobotoSemiBoldTextView
+                    android:id="@+id/tvRestroTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/ivRating"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivRestroImage" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieAnimationView"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivFav"
+                    app:layout_constraintEnd_toEndOf="@+id/ivFav"
+                    app:layout_constraintStart_toStartOf="@+id/ivFav"
+                    app:layout_constraintTop_toTopOf="@+id/ivFav"
+                    app:lottie_fileName="layer.json" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabPaddingStart="@dimen/dp_32"
+            app:tabPaddingEnd="@dimen/dp_32"
+            android:visibility="gone"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="#5F686C" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:visibility="gone"
+            android:background="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:background="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorLightSky"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="left"
+                app:constraint_referenced_ids="tvMenu,ivFilterAddToCart"
+                tools:layout_editor_absoluteX="411dp" />
+
+            <ImageView
+                android:id="@+id/ivSideMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSearchAddToCart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivSearchAddToCart"
+                app:srcCompat="@drawable/side_menu" />
+
+            <ImageView
+                android:id="@+id/ivFilterAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMenu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvMenu"
+                app:srcCompat="@drawable/filter" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/ivSearchAddToCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivFilterAddToCart"
+                app:layout_constraintStart_toEndOf="@+id/ivSideMenu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/searching_icon" />
+
+            <com.pagin.azul.view.RobotoSemiBoldTextView
+                android:id="@+id/tvMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/menu"
+                android:drawablePadding="10dp"
+                android:text="@string/menu"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCuisine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.pagin.azul.view.RobotoSemiBoldTextView
+            android:id="@+id/tvNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_120"
+            android:text="@string/no_data_found"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvCuisine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tvAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:text="@string/add_to_cart"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

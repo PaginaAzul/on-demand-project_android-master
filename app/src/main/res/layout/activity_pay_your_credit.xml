@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PayYourCredit">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionBarBackgroundColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackAddMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/back"
+                />
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_your_credit"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_relative"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_bl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/blacklight"
+            android:text="@string/available_balance"/>
+
+        <com.pagin.azul.view.RobotoBoldTextView
+            android:layout_toRightOf="@+id/tv_bl"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/actionBarBackgroundColor"
+            android:text="52.02SAR"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/rl_relative"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_30">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pagin.azul.view.RobotoRegularEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:hint="@string/enter_amount"
+                android:textColor="@color/blacklight"
+                android:paddingStart="@dimen/dp_27"
+                android:textSize="@dimen/sp_16"
+                android:textColorHint="@color/blacklight"
+                android:background="@drawable/bg_edit_text"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:paddingStart="18dp"
+                android:paddingEnd="@dimen/dp_18"
+                android:background="@drawable/bg_sign_in"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

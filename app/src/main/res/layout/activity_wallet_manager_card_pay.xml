@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WalletManagerCardPay">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionBarBackgroundColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/back"
+                />
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manager_card"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_relative"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:id="@+id/tv_bl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/blacklight"
+            android:text="@string/total_amount_to_be_added"/>
+
+        <com.pagin.azul.view.RobotoBoldTextView
+            android:layout_toRightOf="@+id/tv_bl"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/actionBarBackgroundColor"
+            android:text="15.02SAR"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_offerdetail_corner">
+
+            <ImageView
+                android:id="@+id/iv_as"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/as"
+                android:layout_centerVertical="true"/>
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tv_bnk_name"
+                android:layout_toRightOf="@+id/iv_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********6565"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_15"/>
+
+            <ImageView
+                android:layout_toRightOf="@+id/tv_bnk_name"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_45"
+            android:layout_marginEnd="@dimen/dp_45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pagin.azul.view.RobotoRegularButton
+                android:id="@+id/btn_payNow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:text="@string/pay_now"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:background="@drawable/bg_sign_in"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/blacklight"
+                android:text="@string/other_saved_cards"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_offerdetail_corner">
+
+            <ImageView
+                android:id="@+id/iv_as1"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/as"
+                android:layout_centerVertical="true"/>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_toRightOf="@+id/iv_as1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********5565"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_15"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/unselected_bb"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_offerdetail_corner">
+
+            <ImageView
+                android:id="@+id/iv_circus1"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cirrus"
+                android:layout_centerVertical="true"/>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_toRightOf="@+id/iv_circus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********6687"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_15"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/unselected_bb"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_add_card"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:gravity="center"
+            android:background="@drawable/bg_sign_in" >
+
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"/>
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:layout_toRightOf="@id/iv_add"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

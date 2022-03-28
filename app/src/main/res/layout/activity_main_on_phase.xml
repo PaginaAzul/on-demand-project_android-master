@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onphasesecond.activity.MainActivity">
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/layout_main_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOffers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_white_category"
+                android:elevation="@dimen/dp_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvOffers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivOffers"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--android:src="@drawable/banner"-->
+
+                    <ProgressBar
+                        android:id="@+id/progressbarOffer"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                        app:layout_constraintEnd_toEndOf="@+id/ivRestroImage"
+                        app:layout_constraintStart_toStartOf="@+id/ivRestroImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivRestroImage" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_white_category"
+                android:elevation="@dimen/dp_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGrocery">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--android:src="@drawable/home_ser"-->
+
+                    <ProgressBar
+                        android:id="@+id/progressbarServices"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                        app:layout_constraintEnd_toEndOf="@+id/ivRestroImage"
+                        app:layout_constraintStart_toStartOf="@+id/ivRestroImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivRestroImage" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/clCategory"
+                app:layout_constraintTop_toBottomOf="@+id/clCategory"
+                app:layout_constraintVertical_bias="0.0" />
+            <!--android:text="@string/services"-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGrocery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_white_category"
+                android:elevation="@dimen/dp_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOffers2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvGrocery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivGrocery"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <!--android:src="@drawable/food"-->
+
+                    <ProgressBar
+                        android:id="@+id/progressbarShopping"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivRestroImage"
+                        app:layout_constraintEnd_toEndOf="@+id/ivRestroImage"
+                        app:layout_constraintStart_toStartOf="@+id/ivRestroImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivRestroImage" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvGrocery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/clGrocery"
+                app:layout_constraintTop_toBottomOf="@+id/clGrocery" />
+            <!--android:text="@string/meals_and_shopping"-->
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/offers"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/clOffers"
+                app:layout_constraintTop_toBottomOf="@+id/clOffers" />
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvOffers2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:text="@string/offers"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvOffers3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivOffer" />
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvOffers3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:text="@string/meals"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvOffers4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvOffers2"
+                app:layout_constraintTop_toBottomOf="@+id/ivOffer" />
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvOffers4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:text="@string/shopping"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvOffers5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvOffers3"
+                app:layout_constraintTop_toBottomOf="@+id/ivOffer" />
+
+            <com.pagin.azul.view.RobotoBoldTextView
+                android:id="@+id/tvOffers5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="@string/services"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvOffers4"
+                app:layout_constraintTop_toBottomOf="@+id/ivOffer" />
+
+            <ImageView
+                android:id="@+id/ivOffer"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:background="@drawable/bg_white_circle"
+                app:layout_constraintEnd_toEndOf="@+id/tvOffers2"
+                app:layout_constraintStart_toStartOf="@+id/tvOffers2"
+                app:layout_constraintTop_toBottomOf="@+id/tvOffers"
+                app:srcCompat="@drawable/offers" />
+
+            <ImageView
+                android:id="@+id/ivMeals"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="4dp"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:background="@drawable/bg_white_circle"
+                app:layout_constraintBottom_toTopOf="@+id/tvOffers3"
+                app:layout_constraintEnd_toEndOf="@+id/tvOffers3"
+                app:layout_constraintStart_toStartOf="@+id/tvOffers3"
+                app:srcCompat="@drawable/meals" />
+
+            <ImageView
+                android:id="@+id/ivShopping"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="4dp"
+                android:padding="12dp"
+                android:elevation="4dp"
+                android:background="@drawable/bg_white_circle"
+                app:layout_constraintBottom_toTopOf="@+id/tvOffers4"
+                app:layout_constraintEnd_toEndOf="@+id/tvOffers4"
+                app:layout_constraintStart_toStartOf="@+id/tvOffers4"
+                app:srcCompat="@drawable/shopping" />
+
+            <ImageView
+                android:id="@+id/ivServices"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:elevation="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvOffers5"
+                app:layout_constraintEnd_toEndOf="@+id/tvOffers5"
+                app:layout_constraintStart_toStartOf="@+id/tvOffers5"
+                app:srcCompat="@drawable/services_ho" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

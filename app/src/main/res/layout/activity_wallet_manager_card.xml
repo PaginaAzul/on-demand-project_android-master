@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WalletManageCard">
+
+    <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/actionBarBackgroundColor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBackManageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/back"
+            />
+        <com.pagin.azul.view.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manager_card"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+android:layout_below="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:layout_marginTop="@dimen/dp_25"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:background="@drawable/bg_offerdetail_corner">
+
+    <ImageView
+        android:id="@+id/iv_as"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/as"
+        android:layout_centerVertical="true"/>
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:id="@+id/tv_bnk_name"
+        android:layout_toRightOf="@+id/iv_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="******2415"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dp_10"/>
+
+    <ImageView
+        android:layout_toRightOf="@+id/tv_bnk_name"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerVertical="true"
+        android:src="@drawable/check"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_20"/>
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:layout_marginTop="@dimen/dp_25"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:background="@drawable/bg_offerdetail_corner">
+
+
+    <ImageView
+        android:id="@+id/iv_circus"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cirrus"
+        android:layout_centerVertical="true"/>
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:layout_toRightOf="@+id/iv_circus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="******6644"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_marginStart="@dimen/dp_10"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_20"/>
+</RelativeLayout>
+
+
+
+<RelativeLayout
+    android:id="@+id/rl_add_card"
+    android:layout_marginTop="@dimen/dp_50"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:gravity="center"
+    android:background="@drawable/bg_sign_in" >
+
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"/>
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:layout_toRightOf="@id/iv_add"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_card"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        />
+</RelativeLayout>
+
+</LinearLayout>
+
+
+    </RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:padding="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cate_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_image" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cate_img"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="-1dp">
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Chilli Flakes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+            <RatingBar
+                android:id="@+id/rb_ratting"
+                style="@style/smallRatingBar"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
+                android:rating="5"
+                app:layout_constraintStart_toEndOf="@+id/rating_count"
+                app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/total_rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toTopOf="@+id/item_type"
+                app:layout_constraintStart_toEndOf="@+id/rb_ratting"
+                app:layout_constraintTop_toBottomOf="@+id/item_name"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="4.5 km"
+                android:textColor="@color/purpalMedium"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toTopOf="@+id/item_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/item_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Address:  "
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/sp_12"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb_ratting" />
+
+
+            <com.pagin.azul.view.RobotoRegularTextView
+                android:id="@+id/item_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:textColor="@color/greenthin"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_type" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

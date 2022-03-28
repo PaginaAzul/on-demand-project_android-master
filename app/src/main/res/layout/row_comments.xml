@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <com.pagin.azul.view.RobotoBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"
+        android:id="@+id/tv_user"
+        android:textColor="@color/black"
+        android:text="User123"/>
+
+    <RatingBar
+        android:id="@+id/rb_ratting"
+        style="@style/foodRatingBar"
+        android:layout_toEndOf="@+id/tv_user"
+        android:layout_width="@dimen/dp_53"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:padding="@dimen/dp_2"
+        android:rating="1"/>
+
+    <com.pagin.azul.view.RobotoRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_user"
+        android:id="@+id/tv_user_details"
+        android:textSize="@dimen/text_size_regular"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
